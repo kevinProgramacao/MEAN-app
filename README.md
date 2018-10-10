@@ -14,3 +14,5 @@ Run app
 ```sh
 $ npm start
 ```
+
+### Screenshots: https://github.com/kevinProgramacao/MEAN-app/tree/master/screenshots
