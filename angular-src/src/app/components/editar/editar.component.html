@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit()" *ngIf="pub">
+  <fieldset>
+    <legend>Editar</legend>
+
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Titulo</label>
+      <input type="email" class="form-control"  [(ngModel)]="pub.titulo" id="titulo" name="pub.titulo" aria-describedby="emailHelp" placeholder="Enter email" >
+    </div>
+
+    <div class="form-group">
+      <label for="exampleTextarea">Texto</label>
+      <textarea class="form-control" [(ngModel)]="pub.texto" id="texto" name="texto" rows="3" ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Slug</label>
+      <input type="text" class="form-control" [(ngModel)]="pub.slug" id="slug" name="slug" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+    
+  </fieldset>
+</form>

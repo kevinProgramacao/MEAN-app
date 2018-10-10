@@ -1,0 +1,9 @@
+.button{
+    float: right;
+    margin-bottom: 2%;
+}
+
+.btn-lg{
+    background-color: #8E8C84 !important;
+    border: #8E8C84;
+}

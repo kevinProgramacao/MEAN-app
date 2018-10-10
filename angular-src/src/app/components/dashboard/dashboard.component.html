@@ -1,0 +1,9 @@
+
+<div class="has-text-centered">
+    <div *ngFor="let pub of pubs | paginate: { itemsPerPage: 2, currentPage: page }">
+        <h2 class="page-header">{{pub.titulo}}</h2>
+        <p>{{pub.data}}</p>
+        <p>{{pub.texto}}</p>
+    </div>
+    <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Próxima"></pagination-controls>
+</div>
